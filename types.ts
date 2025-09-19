@@ -65,6 +65,8 @@ export interface AnalysisItem {
     albumArt: string | null;
     masteringChain: MasteringChain | null;
     chainError: string | null;
+    isGeneratingArt?: boolean;
+    isGeneratingChain?: boolean;
     // Mastering Brief settings
     masteringStyle: MasteringStyle;
     chainComplexity: ChainComplexity;

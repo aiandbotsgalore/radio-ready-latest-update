@@ -1,0 +1,196 @@
+/**
+ * Provides the default plugin inventory so the application always has
+ * a comprehensive catalog even before the user imports their own list.
+ *
+ * TECH DEBT: this static payload inflates the bundle size. Long term we should
+ * stream this list from IndexedDB or a CDN-driven manifest instead of shipping
+ * every entry eagerly with the UI bundle.
+ */
+export const DEFAULT_PLUGINS = `
+- Auburn Sounds - Graillon 2
+- Audiofied - T A Equalizer
+- Audiofied - T A Equalizer Pro
+- Audiofied - T C Amplification 3 Pro
+- Audiofied - Mxl Checker Ultra
+- Audiofied - Mxl Checker Pro
+- Audiofied - RX2k2k Equalizer
+- Audiofied - RX2k2b Equalizer
+- Audiofied - UT3b Compressor
+- Audiofied - UT3 Saturator
+- iZotope - Neutron 5 Clipper
+- iZotope - Neutron 5 Compressor
+- iZotope - Neutron 5 Density
+- iZotope - Neutron 5 Equalizer
+- iZotope - Neutron 5 Exciter
+- iZotope - Neutron 5 Gate
+- iZotope - Neutron 5 Limiter
+- iZotope - Neutron 5 Phase
+- iZotope - Neutron 5 Sculptor
+- iZotope - Neutron 5 Transient Shaper
+- iZotope - Neutron 5 Unmask
+- iZotope - Neutron 5 Visual Mixer
+- iZotope - Ozone Imager 2
+- iZotope - RX 11 Breath Control
+- iZotope - RX 11 Connect
+- iZotope - RX 11 De-click
+- iZotope - RX 11 De-crackle
+- iZotope - RX 11 De-ess
+- iZotope - RX 11 De-hum
+- iZotope - RX 11 De-plosive
+- iZotope - RX 11 De-reverb
+- iZotope - RX 11 De-noise
+- iZotope - RX 11 Dialogue Isolate
+- iZotope - RX 11 Guitar De-noise
+- iZotope - RX 11 Monitor
+- iZotope - RX 11 Mouth De-click
+- iZotope - RX 11 Repair Assistant
+- iZotope - RX 11 Spectral De-noise
+- iZotope - RX 11 Voice De-noise
+- iZotope - Ozone 9 Dynamic EQ
+- iZotope - Ozone 9 Exciter
+- iZotope - Ozone 9 Imager
+- iZotope - Ozone 9 Low End Focus
+- iZotope - Ozone 9 Master Rebalance
+- iZotope - Ozone 9 Spectral Shaper
+- iZotope - Ozone 9 Vintage Compressor
+- iZotope - Ozone 9 Vintage EQ
+- iZotope - Ozone 9 Vintage Limiter
+- iZotope - Ozone 9 Vintage Tape
+- LANDR - LANDR Mastering Pro
+- LANDR - LANDR Mastering Standard
+- LANDR - LANDR Mastering
+- LANDR - LANDR MixChain
+- LANDR - LANDR MixDeEss
+- LANDR - LANDR MixTune
+- MeldaProduction - MAGG
+- MeldaProduction - MAnalyzer
+- MeldaProduction - MBandPass
+- MeldaProduction - MBandStop
+- MeldaProduction - MCCGenerator
+- MeldaProduction - MChannelMatrix
+- MeldaProduction - MComb
+- MeldaProduction - MCompressor
+- MeldaProduction - MConvolutionEZ
+- MeldaProduction - MDrumEnhancer
+- MeldaProduction - MDynamicEQ
+- MeldaProduction - MDynamics
+- MeldaProduction - MEcho
+- MeldaProduction - MEq
+- MeldaProduction - MEqualizer
+- MeldaProduction - MFlanger
+- MeldaProduction - MFreeFormPhase
+- MeldaProduction - MFreqShifter
+- MeldaProduction - MGain
+- MeldaProduction - MGate
+- MeldaProduction - MGenerator
+- MeldaProduction - MInstant
+- MeldaProduction - MLimiter
+- MeldaProduction - MLoudnessAnalyzer
+- MeldaProduction - MMaximizer
+- MeldaProduction - MMeter
+- MeldaProduction - MMidSide
+- MeldaProduction - MMixer
+- MeldaProduction - MModernCompressor
+- MeldaProduction - MModernEQ
+- MeldaProduction - MModernSaturation
+- MeldaProduction - MMultiBandCompressor
+- MeldaProduction - MNoiseGenerator
+- MeldaProduction - MNoiseSuppressor
+- MeldaProduction - MOscillator
+- MeldaProduction - MOscilloscope
+- MeldaProduction - MPassiveEQ
+- MeldaProduction - MPhaser
+- MeldaProduction - MPitch
+- MeldaProduction - MPitchShift
+- MeldaProduction - MPreAmp
+- MeldaProduction - MReverb
+- MeldaProduction - MRotary
+- MeldaProduction - MRhythmizer
+- MeldaProduction - MSaturator
+- MeldaProduction - MSpectralDynamics
+- MeldaProduction - MSpectralFX
+- MeldaProduction - MStereoAnalyzer
+- MeldaProduction - MStereoExpander
+- MeldaProduction - MTurboComp
+- MeldaProduction - MTuner
+- MeldaProduction - MTransient
+- MeldaProduction - MTube
+- MeldaProduction - MUtility
+- MeldaProduction - MVibrato
+- MeldaProduction - MVintageRotary
+- MeldaProduction - MVintageWah
+- MeldaProduction - MWaveShaper
+- MeldaProduction - MWide
+- MeldaProduction - MXLoudness
+- MeldaProduction - MXLoudness2
+- Mercuriall - MT-A
+- ML Sound Lab - Amped Roots
+- Musik Hack - FUEL
+- Nomad Factory - AMT Amp Leveling v2
+- Nomad Factory - AMT Max Warm v2
+- Nomad Factory - AMT Mini Warmer v2
+- PLUGIN ALLIANCE-BRAINWORX - Shadow Hills Class A Mastering Comp
+- PLUGIN ALLIANCE-BRAINWORX - Shadow Hills Mastering Compressor
+- Softube - Drawmer S73
+- Softube - Marshall Plexi Classic
+- Softube - Saturation Knob
+- Softube - Tube Delay
+- Softube - Tube-Tech CL 1B mkII
+- Techivation - AI-De-Esser
+- Techivation - AI-Impactor
+- Techivation - T-De-Esser 2
+- Tokyo Dawn Labs - TDR Molotok
+- ToneBoosters - TB Equalizer Pro v4
+- ToneBoosters - TB Barricade v4
+- ToneBoosters - TB BitJuggler v4
+- ToneBoosters - TB Compressor v4
+- ToneBoosters - TB Dual VCF v4
+- ToneBoosters - TB Enhancer v4
+- ToneBoosters - TB Equalizer v4
+- ToneBoosters - TB Ezcomp v4
+- ToneBoosters - TB EzQ v4
+- ToneBoosters - TB Ezverb v4
+- ToneBoosters - TB Gate v4
+- ToneBoosters - TB MBC v1
+- ToneBoosters - TB Morphit v4
+- ToneBoosters - TB Reverb v4
+- ToneBoosters - TB Reverb V2
+- ToneBoosters - TB Sibalance v4
+- ToneBoosters - TB Spectrogram v4
+- ToneBoosters - TB VocalPitcher v4
+- Universal Audio - UADx 1176 FET Compressor
+- Universal Audio - UADx 1176 Rev A Compressor
+- Universal Audio - UADx 1176AE Compressor
+- Universal Audio - UADx 1176LN Rev E Compressor
+- Universal Audio - UADx 175-B Compressor
+- Universal Audio - UADx 176 Compressor
+- Universal Audio - UADx A-Type Multiband Enhancer
+- Universal Audio - UADx Avalon VT-737 Channel Strip
+- Universal Audio - UADx Brigade Chorus
+- Universal Audio - UADx Capitol Chambers
+- Universal Audio - UADx Capitol Mastering Compressor
+- Universal Audio - UADx dbx 160 Compressor
+- Universal Audio - UADx Empirical Labs Distressor
+- Universal Audio - UADx Fairchild 660 Compressor
+- Universal Audio - UADx Fairchild 670 Compressor
+- Universal Audio - UADx Helios Type 69 Preamp and EQ
+- Universal Audio - UADx Hitsville EQ
+- Universal Audio - UADx Hitsville EQ Mastering
+- Universal Audio - UADx LA-2A Tube Compressor
+- Universal Audio - UADx LA-3A Compressor
+- Universal Audio - UADx LA-6176 Channel Strip
+- Universal Audio - UADx Lexicon 224 Digital Reverb
+- Universal Audio - UADx Manley Massive Passive EQ
+- Universal Audio - UADx Manley Massive Passive MST
+- Universal Audio - UADx Manley Variable Mu Compressor
+- Universal Audio - UADx Manley VOXBOX Channel Strip
+- Universal Audio - UADx SSL E Channel Strip
+- Universal Audio - UADx SSL G Bus Compressor
+- Universal Audio - UADx Studio D Chorus
+- Universal Audio - UADx Topline Vocal Suite
+- Universal Audio - UADx Verve Analog Machines
+- Universal Audio - UADx Waterfall Rotary Speaker
+- VOXENGO - Boogex
+- VOXENGO - CurveEQ
+- VOXENGO - Voxformer
+`.trim();

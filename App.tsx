@@ -60,8 +60,8 @@ const AppContent: React.FC = () => {
 
   const renderDashboard = () => {
     const report = currentAnalysis?.report;
-    const isGeneratingArt = currentAnalysis && 'isGeneratingArt' in currentAnalysis && (currentAnalysis as any).isGeneratingArt;
-    const isGeneratingChain = currentAnalysis && 'isGeneratingChain' in currentAnalysis && (currentAnalysis as any).isGeneratingChain;
+    const isGeneratingArt = currentAnalysis?.isGeneratingArt ?? false;
+    const isGeneratingChain = currentAnalysis?.isGeneratingChain ?? false;
 
     return (
         <div className="w-full max-w-screen-2xl mx-auto animate-fade-in p-4 sm:p-6 lg:p-8">
